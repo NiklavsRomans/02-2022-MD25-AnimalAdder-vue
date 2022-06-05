@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <div class="cat-toggle">
-      <CatToggle />
+      <CatToggle @toggleCats="toggleCats" />
     </div>
     <div class="app-form">
       <AnimalForm @addAnimal="addAnimal" />
@@ -72,6 +72,10 @@ export default defineComponent({
       const newAnimals = [...this.animals];
       this.animals = newAnimals;
       return newAnimals;
+    },
+
+    toggleCats(selected: boolean) {
+      `${selected ? (this.viewMode = "only-cats") : (this.viewMode = "all")}`;
     },
 
     addAnimal(animal: AnimalProps) {

@@ -5,6 +5,7 @@
       class="form-check-input"
       type="checkbox"
       role="switch"
+      v-model="selected"
     />
     <label class="form-check-label">Show Cats</label>
   </div>
@@ -18,7 +19,7 @@ export default defineComponent({
   emits: ["toggleCats"],
   data() {
     return {
-      selected: "",
+      selected: false,
     };
   },
   methods: {
