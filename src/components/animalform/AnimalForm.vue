@@ -39,6 +39,7 @@ export default defineComponent({
         name: this.inputValue,
       });
       this.inputValue = "";
+      this.animalType = "";
     },
   },
 });
