@@ -74,10 +74,6 @@ export default defineComponent({
       return newAnimals;
     },
 
-    toggleCats(selected: boolean) {
-      `${selected ? (this.viewMode = "only-cats") : (this.viewMode = "all")}`;
-    },
-
     addAnimal(animal: AnimalProps) {
       this.setAnimals().push(animal);
     },

@@ -2,7 +2,6 @@
   <div class="form-check form-switch">
     <input
       @change="handleCatToggle"
-      v-model="selected"
       class="form-check-input"
       type="checkbox"
       role="switch"
@@ -19,7 +18,7 @@ export default defineComponent({
   emits: ["toggleCats"],
   data() {
     return {
-      selected: false,
+      selected: "",
     };
   },
   methods: {
