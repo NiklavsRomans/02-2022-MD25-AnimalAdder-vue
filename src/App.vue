@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <div class="cat-toggle">
-      <CatToggle @toggleCats="toggleCats" />
+      <CatToggle />
     </div>
     <div class="app-form">
       <AnimalForm @addAnimal="addAnimal" />
